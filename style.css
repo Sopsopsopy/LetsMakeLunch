@@ -1,0 +1,253 @@
+/* Set a background image for the entire page */
+body {
+    background-image: url('1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling/repeating */
+    height: 100vh; /* Ensures the background covers the full viewport height */
+    margin: 0;
+}
+
+
+
+/* Align the image slightly to the left */
+.indexorenddumplings {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    transform: translateX(-30px); 
+}
+
+/* Style the image */
+.ingredients.stop.motion {
+    width: 600px; /* Adjust size as needed */
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+   
+}
+
+
+/* Style the image */
+.broth {
+    width: 600px; /* Adjust width as needed */
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+   
+}
+
+/* Center the image within the viewport */
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    
+}
+
+.soya {
+        position: absolute; /* Enables positioning with top and left */
+        width: 2000px; /* Sets the exact width */
+        max-width: none; /* Prevents the image from being constrained by parent */
+        height: auto; /* Maintain aspect ratio */
+        left: 100px; /* Positioning from the left */
+        top: 280px; /* Positioning from the top */
+        
+    }
+    
+    
+.riceandsteam {
+    width: 600px; /* Adjust width as needed */
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+/* Style the image */
+.frying {
+    width: 600px; /* Adjust width as needed */
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+   
+}
+/* Center the GIF in the viewport */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+
+/* Style and position the knife */
+.knife {
+    position: absolute;
+    top: 80px; /* Adjust to move the knife further down */
+    left: 800px; /* Adjust to move the knife further from the right edge */
+    width: 400px; /* Resize knife to fit on the GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Define the spinning animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the image */
+.indexorenddumplings {
+    width: 450px; /* Adjust size as needed */
+    height: auto;
+    animation: spin 3s linear infinite; /* Spin continuously */
+}
+
+/* Define the floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Move back to the start */
+    }
+}
+
+/* Apply the animation to the image */
+.ingredientslist {
+    width: 450px; /* Set your desired size */
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+}
+
+
+
+/* Apply the animation to the image */
+.soya {
+    width: 550px; /* Set your desired size */
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+  
+}
+
+/* Basic styling for the knife image */
+.knife {
+    right: 480px;
+    width: 500px; /* Set initial size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to bring the image "forward" */
+.knife:hover {
+    transform: scale(1.1); /* Scale up by 10% */
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Move back to the start */
+    }
+}
+
+/* Apply the animation to the image */
+.dumpling {
+    position: absolute;
+    top: 90px; /* Adjust to move the knife further down */
+    left: 900px; /* Adjust to move the knife further from the right edge */
+    width: 300px; /* Resize knife to fit on the GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Basic styling for the knife image */
+.dumpling {
+
+    width: 300px; /* Set initial size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Hover effect to bring the image "forward" */
+.dumpling:hover {
+    transform: scale(1.1); /* Scale up by 10% */
+
+}
+
+.thermos {
+    width: 200px; /* Adjust width as needed */
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+
+   
+}
+
+.pan {
+    width: 200px; /* Set your desired size */
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+  
+}
+.pan {
+    position: absolute; /* Enables positioning with top and left */
+    width: 400px; /* Sets the exact width */
+    max-width: none; /* Prevents the image from being constrained by parent */
+    height: auto; /* Maintain aspect ratio */
+    left: 280px; /* Positioning from the left */
+    top: 100px; /* Positioning from the top */
+    
+}
+
+.thermos {
+    width: 300px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: tilt 2s infinite ease-in-out; /* Apply the tilt animation */
+}
+
+/* Keyframes for the tilting effect */
+@keyframes tilt {
+    0%, 100% {
+        transform: rotate(0deg); /* Start and end at no tilt */
+    }
+    25% {
+        transform: rotate(-5deg); /* Slight tilt to the left */
+    }
+    75% {
+        transform: rotate(5deg); /* Slight tilt to the right */
+    }
+}
+
+.notes {
+    width: 250px; /* Set your desired size */
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ 
